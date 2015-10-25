@@ -1,0 +1,11 @@
+.header-social__link{
+	display: block;
+	width:50px;
+	height:50px;
+}
+$socials: fb, vk, tw;
+@each $social in $socials {
+	.header-social__link__#{$social} {
+		background: url('../img/footer-#{social}.png' 0 0 no-repeat);
+	}
+}

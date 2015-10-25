@@ -1,11 +1,11 @@
 footer.footer-main
 	.container
 		.footer-main__blok-left: img(src="../img/footer-logo.png", alt="Logo")
-		.footer-main__blok-right		
+		.footer-main__blok-right
 			ul.footer-social__lyst
 				-var socials=['fb', 'vk', 'tw']
 				each social in socials
-					li.footer-social__item: a(href="#" class="footer-social__link"+social)
+					li.footer-social__item: a(href="#" class="footer-social__link footer-social__link"+social)= social
 			ul.footer-nav__lyst
 				li.footer-nav__item: a.footer-nav__link Планшеты
 				li.footer-nav__item: a.footer-nav__link Мобильные телефоны
