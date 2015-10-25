@@ -1,0 +1,11 @@
+header.header-container
+	.container
+		ul.header-container__lyst
+			li.header-container__item			
+				ul.header-social__lyst
+					-var socials=['fb', 'vk', 'tw']
+					each social in socials
+						li.header-social__item: a(href="#" class="header-social__link__"+social)
+				| ул. Маяковская 6, офис 17
+			li.header-container__item
+				| +7 (921) 123-12-13

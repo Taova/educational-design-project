@@ -1,6 +1,107 @@
+include _common/mixin
 doctype html
-html(lang="en")
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>				<html class="no-js"> <!--<![endif]-->
+html(lang="ru-RU")
 	head
-		title= pageTitle
+		meta(charser="UTF-8")
+		meta(http-equiv="X-UA-Compatibl",content="IE=edge")
+		meta(name="viewport" content="device-width")
+		title 
+			block title
+		link(rel="stylesheet",href="font/stylesheet.css")
+		link(rel="stylesheet",href="bower/normalize-css/normalize.css")
+		link(rel="stylesheet",href="css/main.css")
 	body
-		block content
+		.wrapper
+			.all-container
+				include _common/_header.jade
+				include _common/_navig.jade
+				+nav("minor", ["Планшеты", "Мобильные телефоны", "Мр3 плееры", "Персональные компьютеры"], 1)
+				.main-container
+					.container
+						nav.breadcrumbs
+							ul.breadcrumbs__lyst
+								li.breadcrumbs__item
+									a.breadcrumbs__link Главная
+								li.breadcrumbs__item
+									a.breadcrumbs__link.active Каталог
+						h1.main-title
+							block main-title
+						form.form-main
+							.first-form
+								h3.first-form__title Наличие в магазинах
+								input.first-form__radio(type="radio", name="name", id="radio-all-shop", placeholder="Во всех магазинах", checked)
+								label.first-form__label(for="radio-all-shop") Во всех магазинах
+								input.first-form__radio(type="radio", name="name", id="radio-near-shop", placeholder="В ближайшем ко мне магазине")
+								label.first-form__label(for="radio-near-shop") В ближайшем ко мне магазине
+							.second-form
+								h3.second-form__title Бренды
+								input.second-form__checkbox(type="checkbox", name="name", id="checkbox-lenovo", placeholder="Lenovo", checked)
+								label.second-form__label(for="checkbox-lenovo") Lenovo
+								input.second-form__checkbox(type="checkbox", name="name", id="checkbox-apple", placeholder="Apple", checked)
+								label.second-form__label(for="checkbox-apple") Apple
+								input.second-form__checkbox(type="checkbox", name="name", id="checkbox-samsung", placeholder="Samsung", checked)
+								label.second-form__label(for="checkbox-samsung") Samsung
+								input.second-form__checkbox(type="checkbox", name="name", id="checkbox-asus", placeholder="Asus", checked)
+								label.second-form__label(for="checkbox-apple") Asus
+								input.second-form__checkbox(type="checkbox", name="name", id="checkbox-motorola", placeholder="Motorola", checked)
+								label.second-form__label(for="checkbox-apple") Motorola
+								a.second-form__link Сбросить фильтр
+							.seach-form
+								.seach-form__range-filter: p.seach-form__price Цена
+								.seach-form__price-controls
+									input.seach-form__min-price(type="text" value="0")
+									input.seach-form__max-price(type="text" value="13000")
+								.seach-form__range-controls
+									.seach-form__scale: .seach-form__bar(style="width:72%")
+									.seach-form__toggle.min-toggle
+									.seach-form__toggle.max-toggle
+							.seach-color-form
+								h3.seach-color-form__title Цвета
+								.seach-color-form__block
+								.seach-color-form__block
+								.seach-color-form__block
+								.seach-color-form__block
+								.seach-color-form__block
+								.seach-color-form__block
+								.seach-color-form__block
+								.seach-color-form__block
+								.seach-color-form__block
+								.seach-color-form__block
+								.seach-color-form__block
+								.seach-color-form__block
+							.third-form
+								h3.third-form__title Операционные системы
+								input.third-form__checkbox(type="checkbox", name="name", id="checkbox-android", placeholder="Android", checked)
+								label.third-form__label(for="checkbox-android") Android
+								input.third-form__checkbox(type="checkbox", name="name", id="checkbox-ios", placeholder="IOS", checked)
+								label.third-form__label(for="checkbox-ios") IOS
+								input.third-form__checkbox(type="checkbox", name="name", id="checkbox-windows-mobile", placeholder="Windows Mobile", checked)
+								label.third-form__label(for="checkbox-windows-mobile") Windows Mobile
+								input.third-form__checkbox(type="checkbox", name="name", id="checkbox-symbian", placeholder="Symbian", checked)
+								label.third-form__label(for="checkbox-symbian") Symbian
+								input.third-form__checkbox(type="checkbox", name="name", id="checkbox-custom", placeholder="Custom", checked)
+								label.third-form__label(for="checkbox-custom") Custom
+								a.third-form__link Сбросить фильтр
+						include _common/_sidebar.jade
+						table.info-block
+							caption.info-block__title Важная информация
+							tr.info-block__stroka
+								td.info-block__block
+									p.info-block__block__p
+										| Повседневная практика показывает, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки модели развития.
+									p.info-block__block__p
+										| Идейные соображения высшего порядка, а также рамки и место обучения кадров позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Таким образом сложившаяся структура организации требуют определения и уточнения направлений прогрессивного развития. Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации
+									p.info-block__block__p
+										| Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации. С другой стороны сложившаяся структура организации позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.
+								td.info-block__block
+									p.info-block__block__p
+										| Повседневная практика показывает, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки модели развития.
+									p.info-
+										| Идейные соображения высшего порядка, а также рамки и место обучения кадров позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Таким образом сложившаяся структура организации требуют определения и уточнения направлений прогрессивного развития. Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации
+									p.info-block__block__p
+										| Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации. С другой стороны сложившаяся структура организации позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.
+						include _common/_footer.jade
