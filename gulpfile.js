@@ -31,7 +31,7 @@ var
 
 		browserSync : {
 			baseDir : './app',
-			watchPaths : ['*.html', 'css/*.css', 'js/*.js']
+			watchPaths : ['app/*.html', 'app/css/*.css', 'app/js/*.js']
 		}
 	}
 
