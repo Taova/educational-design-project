@@ -1,0 +1,16 @@
+.info-block__title{
+	font-size: 20px;
+	line-height: 20px;
+	@include open-sans(bold);
+	color: $black;
+	margin-bottom: 23px;
+}
+.info-block__text{
+	p{
+		font-size: $fontSize;
+		line-height: $fontSize+6;
+		@include open-sans();
+		color: $black;
+		margin-bottom: 20px;
+	}
+}

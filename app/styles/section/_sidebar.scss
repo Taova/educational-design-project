@@ -1,0 +1,55 @@
+.sidebar{
+	float: right;
+	width: 740px;
+	.sidebar__block-seach{
+		width: 740px;
+		display: block;
+		background:#e4ebee;
+		border-radius: 3px;
+		border: 1px solid #dee1e4;
+		margin-bottom: 20px;
+		.sidebar__block-seach__lyst{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			.sidebar__block-seach__item{
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 0;
+				.sidebar__block-seach__link{
+					font-size: $fontSize;
+					font-family: $fontFamily;
+					&.sidebar__block-seach__view{
+						padding:14px;
+						border-left: 1px solid #dee1e4;
+						&.view{
+							border-left:none;
+						}
+					}
+				}
+			}
+		}
+	} 
+}
+.sidebar__block-seach__form{
+	display: block;
+	font-size: 0;
+	margin-right: 176px;
+	.sidebar__block-seach__form__label{
+		display: inline-block;
+		vertical-align: middle;
+		font-size: $fontSize;
+		font-family: $fontFamily;
+		margin-right: 9px;
+		padding-left: 18px;
+	}
+	.sidebar__block-seach__form__select{
+		display: inline-block;
+		vertical-align: middle;
+		font-size: $fontSize;
+		font-family: $fontFamily;
+		border:1px solid #dddddd;
+		padding: 5px 12px; 
+		max-width: 142px;
+	}
+}

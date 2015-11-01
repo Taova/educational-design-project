@@ -1,0 +1,70 @@
+form.form-main
+	ul.form-main-block
+		-var items = ['Флагманы', 'Бюджетная линейка']
+		each item in items
+			li(class='form-main-block__item'+((item=='Бюджетная линейка')?' '+'active':''))
+				a(href="#" class="form-main-block__link")=item
+	ul.form-main__lyst
+		li.form-main__item
+			h3.form-main__title Наличие в магазинах
+			ul.form-main__choose
+				-var items=["Во всех магазинах","В ближайшем ко мне магазине"]
+				each item in items
+					li.form-main__choose-item
+						label(class="form-main__choose-label")
+							input(class="form-main__choose-input" name="location" type="radio", placeholder=item, checked)
+							.form-main__choose-elem
+							.form-main__choose-text=item
+		li.form-main__item
+			h3.form-main__title Бренды
+			ul.form-main__choose.form-main__choose-checkbox
+				-var items=["Lenovo","Apple","Samsung", "Asus", "Motorola"]
+				each item in items
+					li.form-main__choose-item
+						label(class="form-main__choose-label")
+							input(class="form-main__choose-input" type="checkbox", name="location", placeholder=item)
+							.form-main__choose-elem
+							.form-main__choose-text=item
+			.form-main__reset-wrap
+				a(href="#" class="form-main__reset") Сбросить фильтр
+		li.form-main__item
+			h3.form-main__title Цена
+			.form-main__choose
+				//- .form-main__slider
+				//- 	.form-main__slider-left
+				//- 		.form-main__text от
+				//- 		input.form-main__min-price.form-main__price(type="text" value="0")
+				//- 	.form-main__slider-right
+				//- 		.form-main__text до
+				//- 		input.form-main__max-price.form-main__price(type="text" value="0")
+				//- .form-main__slider-element
+				.seach-form__lyst
+					.seach-form__left
+						.seach-form__text от
+						input.seach-form__min-price(type="text" value="0").seach-form__price
+					.seach-form__right
+						.seach-form__text до
+						input.seach-form__max-price(type="text" value="13000").seach-form__price
+					.seach-form__range-controls
+						.seach-form__scale: .seach-form__bar(style="width:50%")
+						.seach-form__toggle.min-toggle
+						.seach-form__toggle.max-toggle
+		li.form-main__item
+			h3.form-main__title Цвета
+			ul.form-main__choose.form-main-colors
+				-var colors=['#fff','#ccc','#000','#0a3153','#ff1800','#fff343','#fb914a','#92c37c','#40a6ff','#9870ad','#dc78ad','#7f401d']
+				each color in colors
+					li.form-main-colors__item
+						a(href='#' style='background-color:'+color).form-main-colors__link
+		li.form-main__item
+			h3.form-main__title Операционные системы
+			ul.form-main__choose.form-main__choose-checkbox
+				-var items=["Android","IOS","Windows Mobile", "Symbian", "Custom"]
+				each item in items
+					li.form-main__choose-item
+						label(class="form-main__choose-label")
+							input(class="form-main__choose-input" type="checkbox", name="location", placeholder=item)
+							.form-main__choose-elem
+							.form-main__choose-text=item
+			.form-main__reset-wrap
+				a(href="#" class="form-main__reset") Сбросить фильтр

@@ -1,0 +1,6 @@
+nav.breadcrumbs
+	ul.breadcrumbs__lyst
+		-var items = ['Главная', 'Каталог']
+		each item in items
+			li(class="breadcrumbs__item")
+				a(href="#" class="breadcrumbs__link"+ ((item=='Каталог')? ' active':''))=item

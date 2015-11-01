@@ -1,9 +1,13 @@
 nav.main-navigation
-	ul.main-navigation__lyst
-		li.main-navigation__item: a.main-navigation__link: img(src="../img/header-logo.png", alt="logo")
-		li.main-navigation__item: form.main-navigation-seach
-			input.main-navigation-input(type="text", placeholder="Что будем искать")
-			button.main-navigation-btn(type="submit") Найти
-		li.main-navigation__item: a.main-navigation__link.nav-btn Карта проезда 
-		li.main-navigation__item: a.main-navigation__link.nav-btn История заказов
-		li.main-navigation__item: a.main-navigation__link.nav-btn Корзина
+	.container
+		ul.main-navigation__lyst
+			li.main-navigation__item: a.main-navigation__link.header-logo: img(class="header-logo__img" src="../img/header-logo.png", alt="logo")
+			li.main-navigation__item: form.main-navigation-seach
+				input.main-navigation-input(type="text", placeholder="Что будем искать")
+				button.main-navigation-btn(type="submit" valur="Найти") Найти
+			li.main-navigation__item.nav: a(href="#" class="main-navigation__link nav-btn") Карта проезда 
+			li.main-navigation__item.nav: a(href="#" class="main-navigation__link nav-btn") История заказов
+			li.main-navigation__item.nav: a(href="#" class="main-navigation__link nav-btn") Корзина
+nav.minor-navigation
+	.container			
+		+nav("minor", ["Планшеты", "Мобильные телефоны", "Мр3 плееры", "Персональные компьютеры", "Ноутбуки", "Аксессуары", "Бытовая техника"], 1)

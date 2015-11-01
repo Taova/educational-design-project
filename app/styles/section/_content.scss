@@ -1,0 +1,222 @@
+.main-container{
+	padding:28px 0 ;
+	.main-title{
+		padding: 0;
+		margin: 0;
+		font-size: 20px;
+		@include  open-sans(bold);
+		margin-bottom: 30px;
+		color: $black;
+	}
+}
+.main-container__content{
+	@include clearfix;
+	margin-bottom: 33px;
+}
+.form-main{
+	float:left;
+	width:335px;
+}
+
+.form-main-block{
+	@include forul;
+	@include border-radius(3px);
+	overflow: hidden;
+	width: 100%;
+	border: 1px solid $grey;
+	margin-bottom: 40px;
+	.form-main-block__item{
+		display: block;
+		background:#fff;
+		border-top: 1px solid $grey;
+		&:first-child{
+			border-top:none; 
+		}
+		.form-main-block__link{
+			text-decoration: none;
+			display: block;
+			color: #7f7f7f;
+			padding: 12px 30px 13px 29px;
+			
+		}
+		&.active{
+			background:#d9e5ea;
+			color: #5d656c;
+		}
+	}
+}
+.form-main__lyst{
+	@extend .form-main-block;
+	background:#fff;
+}
+.form-main__item{
+	padding: 12px 28px;
+	border-top: 1px solid $grey;
+	&:first-child{
+		border-top:none;
+	}
+}
+.form-main__choose-item{
+	margin-top:16px;
+	&:first-child{
+		margin-top: 0;
+	}
+}
+.form-main__title{
+	padding: 0;
+	margin:0;
+	@include open-sans(semibold);
+	font-size: 16px;
+	color:$black;
+	margin-bottom: 18px;
+	position: relative;
+	&:after{
+		content: "";
+		position: absolute;
+		top: 0;
+		right: -26px;
+		width: 21px;
+		height: 10px;
+		background: url('../img/icons/strelka-up.png') 0 0 no-repeat;
+	}
+}
+.form-main__choose{
+	@include forul;
+	margin-bottom: 15px;
+}
+.form-main__choose-label{
+	display: block;
+	position: relative;
+}
+.form-main__choose-elem{
+	border: 3px solid $grey;
+	width: 13px;
+	height: 13px;
+	@include border-radius(50%);
+	position: relative;
+	@include transition(border-color .3s);
+	@include inlineblock();
+	&:after{
+		content: '';
+		@include absolute-center;
+		width: 0;
+		height: 0;
+		@include border-radius(50%);
+		background: $orange;
+		@include transition(.3s);
+	}
+}
+.form-main__choose-input{
+	position: absolute;
+	top: 0;
+	left: -9999px;
+
+	&:checked + .form-main__choose-elem{
+		border-color: $orange;
+		&:after{
+			width: 9px;
+			height: 9px;
+		}
+	}
+}
+.form-main__choose-text{
+	@include inlineblock(middle);
+	font-size: $fontSize;
+	line-height: 16px;
+	color: $black;
+	max-width: 240px;
+	margin-left: 6px;
+}
+/*--------checkboxes--------*/
+.form-main__choose-checkbox{
+	.form-main__choose-elem{
+		@include border-radius(3px);
+		background:$grey;
+		@include transition(.2s);
+
+		&:after{
+			content: '';
+			display: block;
+			@include absolute-center;
+			opacity: 0;
+			@include transition(.2s);
+			@include get-sprite ($misc-sprite, galka);
+			width: 13px !important;
+			height: 10px !important;
+		}
+	}
+	.form-main__choose-input{
+		&:checked + .form-main__choose-elem{
+			background: $orange;
+			&:after{
+				opacity: 1;
+			}
+		}
+	}
+}
+.form-main__reset-wrap{
+	.form-main__reset{
+		color:#5db2fc;
+		font-size: $fontSize;
+		line-height: $fontSize+2;
+		@include open-sans(regular);
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+/*------colors-----*/
+.form-main-colors{
+	@include forul;
+	font-size: 0;
+	margin-left: -10px;
+	margin-bottom: -8px;
+}
+.form-main-colors__item{
+	@include inlineblock();
+	border: 3px solid transparent;
+	margin-left: 10px;
+	margin-bottom: 8px;
+	&:hover{
+		border-color: $orange;
+	}
+}
+.form-main-colors__link{
+	border: 1px solid $grey;
+	width: 37px;
+	height: 37px;
+	display: block;
+	font-size: $fontSize;
+
+}
+/*------slider-----*/
+.seach-form__lyst{
+	@include clearfix;
+}
+.seach-form__left{
+	float:left;
+	width: 50%;
+}
+.seach-form__right{
+	float:right;
+	width: 50%;
+}
+.seach-form__price{
+	width: 68px;
+	border: none;
+	padding: 0;
+	margin: 0;
+	padding: 8px;
+	@include border-radius(4px);
+	overflow: hidden;
+	border: 2px solid $grey;
+	@include inlineblock(middle);
+
+}
+.seach-form__text{
+	@include inlineblock(middle);
+	font-size: $fontSize;
+	line-height: $fontSize+2;
+	@include open-sans(regular);
+	margin-right: 13px;
+}

@@ -5,7 +5,12 @@ header.header-container
 				ul.header-social__lyst
 					-var socials=['fb', 'vk', 'tw']
 					each social in socials
-						li.header-social__item: a(href="#" class="header-social__link header-social__link__"+social)= social
-				| ул. Маяковская 6, офис 17
-			li.header-container__item
-				| +7 (921) 123-12-13
+						li(class='header-social__item')
+							a(href="#" class="header-social__link header-social__link__"+social)
+								.social__icon
+			li.header-container__item.header-number
+				a(href='tel:+79211231213' class='header-number__link')
+					| +7 (921) 123-12-13
+			li.header-container__item.header-adress
+				a(href='#' class='header-adress__link')
+					| ул. Маяковская 6, офис 17

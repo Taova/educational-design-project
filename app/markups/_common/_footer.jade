@@ -1,18 +1,23 @@
-footer.footer-main
-	.container
-		.footer-main__blok-left: img(src="../img/footer-logo.png", alt="Logo")
-		.footer-main__blok-right
-			ul.footer-social__lyst
-				-var socials=['fb', 'vk', 'tw']
-				each social in socials
-					li.footer-social__item: a(href="#" class="footer-social__link footer-social__link"+social)= social
-			ul.footer-nav__lyst
-				li.footer-nav__item: a.footer-nav__link Планшеты
-				li.footer-nav__item: a.footer-nav__link Мобильные телефоны
-				li.footer-nav__item: a.footer-nav__link Мр3 плееры
-				li.footer-nav__item: a.footer-nav__link Персональные компьютеры
-				li.footer-nav__item: a.footer-nav__link Ноутбуки
-				li.footer-nav__item: a.footer-nav__link Аксессуары
-				li.footer-nav__item: a.footer-nav__link Бытовая техника
-	.footer-main-lastblock
-		| All rights reserved. 2015. no copy alowed
+footer.footer
+	.footer__top
+		.container
+			.footer__left
+				a(href='#').logo.logo_footer
+					img(src="../img/footer-logo.png", alt="Logo").logo__img
+					.logo__text cooltech
+			.footer__right
+				ul.social.footer_socials
+					-var socials=['fb', 'vk', 'tw']
+					each social in socials
+						li(class='social__item social__item_'+social)
+							a(href="#" class='social__link')
+							
+				ul.footer__nav
+					-var items = ["Планшеты", "Мобильные телефоны", "Мр3 плееры", "Персональные компьютеры", "Ноутбуки", "Аксессуары", "Бытовая техника"]
+					each item in items
+						li.footer-nav__item
+							a(href='#').footer-nav__link=item
+	.footer__bottom
+		.container
+			.footer__copyright
+			| All rights reserved. 2015. no copy alowed
