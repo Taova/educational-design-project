@@ -2,22 +2,21 @@ footer.footer
 	.footer__top
 		.container
 			.footer__left
-				a(href='#').logo.logo_footer
-					img(src="../img/footer-logo.png", alt="Logo").logo__img
+				a(href="#").logo.logo_footer
+					img(src="/img/footer-logo.png" alt="cooltech logo").logo__img
 					.logo__text cooltech
 			.footer__right
-				ul.social.footer_socials
-					-var socials=['fb', 'vk', 'tw']
-					each social in socials
-						li(class='social__item social__item_'+social)
-							a(href="#" class='social__link')
-							
-				ul.footer__nav
-					-var items = ["Планшеты", "Мобильные телефоны", "Мр3 плееры", "Персональные компьютеры", "Ноутбуки", "Аксессуары", "Бытовая техника"]
+				ul.socials.socials_footer
+					- var items = ['fb', 'vk', 'tw']
 					each item in items
-						li.footer-nav__item
-							a(href='#').footer-nav__link=item
+						li(class="socials__item socials__item_" + item)
+							a(href="#").socials__link
+								.social-icon
+				ul.footer__nav
+					- var items = ["Планшеты", "Мобильные телефоны", "Mp3 плееры", "Персональные компьютеры", "Аксессуары", "Бытовая техника"]
+					each item in items
+						li.footer__nav-item
+							a(href="#").footer__nav-link= item
 	.footer__bottom
 		.container
-			.footer__copyright
-			| All rights reserved. 2015. no copy alowed
+			.footer__copyright All rights reserved. 2015. no copy allowed

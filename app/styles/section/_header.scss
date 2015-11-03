@@ -39,15 +39,20 @@
 	@include absolute-center;
 }
 $socials: fb, vk , tw;
-$socials-hover: fb-hover, vk-hover , tw-hover;
 $socials-map: sprite-map('icons/socials/*.png', $spacing: 70px);
 
 @each $social in $socials{
 	.header-social__link__#{$social}{
 		.social__icon{
 			@include get-sprite($socials-map, $social);
+			}
+	&:hover{
+		.social__icon{
+			$socials-name: $social + '-hover';
+			@include get-sprite($socials-map, $socials-name);
 		}
 	}
+}
 }
 .header-container__item{
 	&.header-adress{

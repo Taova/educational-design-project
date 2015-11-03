@@ -1,62 +1,103 @@
-.footer{
+.footer {
 	background: url('/img/footer-background.png') center center;
 	position: relative;
 }
-.footer__top{
+
+.footer__top {
 	@include clearfix;
-	padding-top: 33px;
+	padding-top: 34px;
 }
-.footer__left{
+
+.footer__left {
 	width: 45%;
-	float:left;
-	padding-top: 39px;
+	float: left;
+	padding-top: 34px;
 }
-.footer__right{
-	float: right;
+
+.footer__right {
 	width: 55%;
+	float: left;
 	text-align: right;
+	
+	margin-bottom: 27px;
 }
-.logo_footer{
-	max-width: 255px;
-	height: 37px;
-	.logo__img{
+
+.logo_footer {
+	.logo__img {
+		max-width: 255px;
 	}
 	.logo__text{
 		position: absolute;
 		top: 0;
-		left: -9999px;
+		left:-9999px;
 	}
 }
-
+.social-icon{
+	@include absolute-center;
+}
 $dark-socials-map: sprite-map('icons/socials-dark/*.png', $spacing: 70px);
-.footer_socials{
-	margin-bottom: 21px;
-	margin-right: -26px;
 
-	.social__item{
-		margin-right:26px;
-		@include inlineblock(top);
+.socials_footer {
+	@include forul;
+	.socials__item {
+		margin-left: 26px;
+		@include inlineblock(middle);
 	}
-	.social__link{
+	.socials__link {
+		position: relative;
 		width: 45px;
 		height: 45px;
-		background:#fff;
-		@include border-radius(50%);
-		text-decoration: none;
+		background: #ffffff;
 		display: block;
-		text-indent: -9999px;
+		@include border-radius(50%);
 	}
-	$items: fb, tw, vk;
-	@each $item in  $items{
-		.social__item_#{$item}{
-			.social__link{
-				&:after{
-					content: '';
-					@include get-sprite($dark-socials-map,$item);
+	$items: fb, vk, tw;
+	@each $item in $items {
+		.socials__item_#{$item} {
+			.social-icon {
+				@include get-sprite($dark-socials-map, $item);
+				content: "";
+			}
+		&:hover {
+			.social-icon {
+				$icon-name: $item + '-h';
+				@include get-sprite($dark-socials-map, $icon-name);
 					
-					@include absolute-center;
 				}
 			}
 		}
 	}
+}
+
+.footer__nav-item {
+	@include forul;
+	@include inlineblock();
+	margin-left: 33px;
+	margin-bottom: 15px;
+}
+
+.footer__nav-link {
+	font-size: 14px;
+	line-height: 16px;
+	color: #ffffff;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.footer__bottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-top: 1px solid #494949;
+	text-align: center;
+	color: #ffffff;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.footer__copyright {
+	padding: 8px 0;
 }

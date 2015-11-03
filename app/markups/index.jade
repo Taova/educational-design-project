@@ -12,6 +12,7 @@ html(lang="ru-RU")
 		title 
 			block title
 		link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css')
+		link(rel="stylesheet",href="fonts/rubl.css")
 		link(rel="stylesheet",href="css/main.css")
 	body
 		.wrapper
@@ -25,6 +26,26 @@ html(lang="ru-RU")
 							block main-title
 						.main-container__content
 							include _common/_content.jade
-							include _common/_sidebar.jade
+							.content
+								.sort
+									.sort__left
+										.sort__select--wrap
+											.sort__title
+												| Сортировать по
+											.sort__select
+												select.sort__select-elem
+													- var options = ["по цене", "по популярности"]
+													each option in options
+														option(value="")= option
+									.sort__right
+										.sort__title
+											| Вид каталога
+										.sort__view
+											ul.sort__view-list
+												- var items = ['rows', 'grids', 'lines']
+												each item in items
+													li(class="sort__view-item sort__view_" + item data-view= item)
+														a(href="#").sort__view-link
+								include _common/_sidebar.jade
 						include _common/_info-block.jade
 		include _common/_footer.jade

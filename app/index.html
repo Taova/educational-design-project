@@ -9,6 +9,7 @@
 		<meta name="viewport" content="device-width">
 		<title> Главная страница</title>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="fonts/rubl.css">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
@@ -221,359 +222,678 @@
 									</li>
 								</ul>
 							</form>
-							<div class="sidebar">
-								<nav class="sidebar__block-seach">
-									<ul class="sidebar__block-seach__lyst">
-										<li class="sidebar__block-seach__item">
-											<form class="sidebar__block-seach__form">
-												<p class="sidebar__block-seach__form__label">Сортировать по</p>
-												<select class="sidebar__block-seach__form__select">
-													<option class="sidebar__block-seach__form__option">по цене</option>
-													<option class="sidebar__block-seach__form__option">по популярности</option>
+							<div class="content">
+								<div class="sort">
+									<div class="sort__left">
+										<div class="sort__select--wrap">
+											<div class="sort__title">Сортировать по</div>
+											<div class="sort__select">
+												<select class="sort__select-elem">
+													<option value="">по цене</option>
+													<option value="">по популярности</option>
 												</select>
-											</form>
-										</li>
-										<li class="sidebar__block-seach__item"><a href="#" class="sidebar__block-seach__link sidebar__block-seach__view view">Вид каталога</a></li>
-										<li class="sidebar__block-seach__item"><a href="#" class="sidebar__block-seach__link sidebar__block-seach__view"><img src="../img/icons/view-list-1.png" class="sidebar__block-seach__img"></a></li>
-										<li class="sidebar__block-seach__item"><a class="sidebar__block-seach__link sidebar__block-seach__view"></a></li>
-										<li class="sidebar__block-seach__item"><a class="sidebar__block-seach__link sidebar__block-seach__view"></a></li>
-									</ul>
-								</nav>
-								<div class="sidebar__gallery">
-									<div id="gallery_lyst" class="ul sidebar__gallery__lyst">
-										<li class="sidebar__gallery__item">
-											<ul class="sidebar__gallery__image">
-												<li class="sidebar__gallery__image__lyst"><img src="../img/foto1.png" class="sidebar__gallery__image__item"></li>
-												<li class="sidebar__gallery__image__lyst"><img src="../img/foto1-1.png" class="sidebar__gallery__image__item"></li>
-												<li class="sidebar__gallery__image__lyst"><img src="../img/foto1-2.png" class="sidebar__gallery__image__item"></li>
-												<li class="sidebar__gallery__image__lyst"><img src="../img/foto1-3.png" class="sidebar__gallery__image__item"></li>
+											</div>
+										</div>
+									</div>
+									<div class="sort__right">
+										<div class="sort__title">Вид каталога</div>
+										<div class="sort__view">
+											<ul class="sort__view-list">
+												<li data-view="rows" class="sort__view-item sort__view_rows"><a href="#" class="sort__view-link"></a></li>
+												<li data-view="grids" class="sort__view-item sort__view_grids"><a href="#" class="sort__view-link"></a></li>
+												<li data-view="lines" class="sort__view-item sort__view_lines"><a href="#" class="sort__view-link"></a></li>
 											</ul>
-											<p class="sidebar__gallery__content">Samsung GT-I9301I  GALAXY S 3   </p>
-											<table class="sidebar__gallery__table">
-												<tr>
-													<td>Тип SIM-карты</td>
-													<td>Micro-SIM </td>
-												</tr>
-												<tr>
-													<td>Количество SIM-карт</td>
-													<td>1</td>
-												</tr>
-												<tr>
-													<td>Цвет</td>
-													<td>Белый </td>
-												</tr>
-												<tr>
-													<td>ОС</td>
-													<td>Android</td>
-												</tr>
-												<tr>
-													<td>Связь 3G</td>
-													<td>Есть </td>
-												</tr>
-												<tr>
-													<td>4G(LTE)</td>
-													<td>Нет</td>
-												</tr>
-												<tr>
-													<td>GPS-модуль</td>
-													<td>Есть</td>
-												</tr>
-											</table>
-											<div class="sidebar__gallery__reiting">
-												<ul class="sidebar__gallery__star__lyst">
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting.png" alt="Star"></li>
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting.png" alt="Star"></li>
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting.png" alt="Star"></li>
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting.png" alt="Star"></li>
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting.png" alt="Star"></li>
-												</ul>
-												<div class="sidebar__gallery__reiting__block">4</div>
-											</div>
-											<div class="sidebar__gallery__price"></div>
-											<div class="sidebar__gallery__footer">
-												<div class="sidebar__gallery__footer__block">В наличии</div>
-												<button class="sidebar__gallery__footer__btn">В корзину</button>
-											</div>
-										</li>
-										<li class="sidebar__gallery__item">
-											<ul class="sidebar__gallery__image">
-												<li class="sidebar__gallery__image__lyst"><img src="../img/foto1.png" class="sidebar__gallery__image__item"></li>
-												<li class="sidebar__gallery__image__lyst"><img src="../img/foto1-1.png" class="sidebar__gallery__image__item"></li>
-												<li class="sidebar__gallery__image__lyst"><img src="../img/foto1-2.png" class="sidebar__gallery__image__item"></li>
-												<li class="sidebar__gallery__image__lyst"><img src="../img/foto1-3.png" class="sidebar__gallery__image__item"></li>
-											</ul>
-											<p class="sidebar__gallery__content">Samsung GT-I9301I  GALAXY S 3   </p>
-											<table class="sidebar__gallery__table">
-												<tr>
-													<td>Тип SIM-карты</td>
-													<td>Micro-SIM </td>
-												</tr>
-												<tr>
-													<td>Количество SIM-карт</td>
-													<td>1</td>
-												</tr>
-												<tr>
-													<td>Цвет</td>
-													<td>Белый </td>
-												</tr>
-												<tr>
-													<td>ОС</td>
-													<td>Android</td>
-												</tr>
-												<tr>
-													<td>Связь 3G</td>
-													<td>Есть </td>
-												</tr>
-												<tr>
-													<td>4G(LTE)</td>
-													<td>Нет</td>
-												</tr>
-												<tr>
-													<td>GPS-модуль</td>
-													<td>Есть</td>
-												</tr>
-											</table>
-											<div class="sidebar__gallery__reiting">
-												<ul class="sidebar__gallery__star__lyst">
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting.png" alt="Star"></li>
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting.png" alt="Star"></li>
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting.png" alt="Star"></li>
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting.png" alt="Star"></li>
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting_0.png" alt="Star"></li>
-												</ul>
-												<div class="sidebar__gallery__reiting__block">4</div>
-											</div>
-											<div class="sidebar__gallery__price"></div>
-											<div class="sidebar__gallery__footer">
-												<div class="sidebar__gallery__footer__block">В наличии</div>
-												<button class="sidebar__gallery__footer__btn">В корзин</button>
-											</div>
-										</li>
-										<li class="sidebar__gallery__item">
-											<ul class="sidebar__gallery__image">
-												<li class="sidebar__gallery__image__lyst"><img src="../img/foto1.png" class="sidebar__gallery__image__item"></li>
-												<li class="sidebar__gallery__image__lyst"><img src="../img/foto1-1.png" class="sidebar__gallery__image__item"></li>
-												<li class="sidebar__gallery__image__lyst"><img src="../img/foto1-2.png" class="sidebar__gallery__image__item"></li>
-												<li class="sidebar__gallery__image__lyst"><img src="../img/foto1-3.png" class="sidebar__gallery__image__item"></li>
-											</ul>
-											<p class="sidebar__gallery__content">Samsung GT-I9301I  GALAXY S 3   </p>
-											<table class="sidebar__gallery__table">
-												<tr>
-													<td>Тип SIM-карты</td>
-													<td>Micro-SIM </td>
-												</tr>
-												<tr>
-													<td>Количество SIM-карт</td>
-													<td>1</td>
-												</tr>
-												<tr>
-													<td>Цвет</td>
-													<td>Белый </td>
-												</tr>
-												<tr>
-													<td>ОС</td>
-													<td>Android</td>
-												</tr>
-												<tr>
-													<td>Связь 3G</td>
-													<td>Есть </td>
-												</tr>
-												<tr>
-													<td>4G(LTE)</td>
-													<td>Нет</td>
-												</tr>
-												<tr>
-													<td>GPS-модуль</td>
-													<td>Есть</td>
-												</tr>
-											</table>
-											<div class="sidebar__gallery__reiting">
-												<ul class="sidebar__gallery__star__lyst">
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting.png" alt="Star"></li>
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting.png" alt="Star"></li>
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting.png" alt="Star"></li>
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting.png" alt="Star"></li>
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting_0.png" alt="Star"></li>
-												</ul>
-												<div class="sidebar__gallery__reiting__block">4</div>
-											</div>
-											<div class="sidebar__gallery__price"></div>
-											<div class="sidebar__gallery__footer">
-												<div class="sidebar__gallery__footer__block">В наличии</div>
-												<button class="sidebar__gallery__footer__btn">В корзин</button>
-											</div>
-										</li>
-										<li class="sidebar__gallery__item">
-											<ul class="sidebar__gallery__image">
-												<li class="sidebar__gallery__image__lyst"><img src="../img/foto1.png" class="sidebar__gallery__image__item"></li>
-												<li class="sidebar__gallery__image__lyst"><img src="../img/foto1-1.png" class="sidebar__gallery__image__item"></li>
-												<li class="sidebar__gallery__image__lyst"><img src="../img/foto1-2.png" class="sidebar__gallery__image__item"></li>
-												<li class="sidebar__gallery__image__lyst"><img src="../img/foto1-3.png" class="sidebar__gallery__image__item"></li>
-											</ul>
-											<p class="sidebar__gallery__content">Samsung GT-I9301I  GALAXY S 3   </p>
-											<table class="sidebar__gallery__table">
-												<tr>
-													<td>Тип SIM-карты</td>
-													<td>Micro-SIM </td>
-												</tr>
-												<tr>
-													<td>Количество SIM-карт</td>
-													<td>1</td>
-												</tr>
-												<tr>
-													<td>Цвет</td>
-													<td>Белый </td>
-												</tr>
-												<tr>
-													<td>ОС</td>
-													<td>Android</td>
-												</tr>
-												<tr>
-													<td>Связь 3G</td>
-													<td>Есть </td>
-												</tr>
-												<tr>
-													<td>4G(LTE)</td>
-													<td>Нет</td>
-												</tr>
-												<tr>
-													<td>GPS-модуль</td>
-													<td>Есть</td>
-												</tr>
-											</table>
-											<div class="sidebar__gallery__reiting">
-												<ul class="sidebar__gallery__star__lyst">
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting.png" alt="Star"></li>
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting.png" alt="Star"></li>
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting.png" alt="Star"></li>
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting.png" alt="Star"></li>
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting_0.png" alt="Star"></li>
-												</ul>
-												<div class="sidebar__gallery__reiting__block">4</div>
-											</div>
-											<div class="sidebar__gallery__price"></div>
-											<div class="sidebar__gallery__footer">
-												<div class="sidebar__gallery__footer__block">В наличии</div>
-												<button class="sidebar__gallery__footer__btn">В корзин</button>
-											</div>
-										</li>
-										<li class="sidebar__gallery__item">
-											<ul class="sidebar__gallery__image">
-												<li class="sidebar__gallery__image__lyst"><img src="../img/foto1.png" class="sidebar__gallery__image__item"></li>
-												<li class="sidebar__gallery__image__lyst"><img src="../img/foto1-1.png" class="sidebar__gallery__image__item"></li>
-												<li class="sidebar__gallery__image__lyst"><img src="../img/foto1-2.png" class="sidebar__gallery__image__item"></li>
-												<li class="sidebar__gallery__image__lyst"><img src="../img/foto1-3.png" class="sidebar__gallery__image__item"></li>
-											</ul>
-											<p class="sidebar__gallery__content">Samsung GT-I9301I  GALAXY S 3   </p>
-											<table class="sidebar__gallery__table">
-												<tr>
-													<td>Тип SIM-карты</td>
-													<td>Micro-SIM </td>
-												</tr>
-												<tr>
-													<td>Количество SIM-карт</td>
-													<td>1</td>
-												</tr>
-												<tr>
-													<td>Цвет</td>
-													<td>Белый </td>
-												</tr>
-												<tr>
-													<td>ОС</td>
-													<td>Android</td>
-												</tr>
-												<tr>
-													<td>Связь 3G</td>
-													<td>Есть </td>
-												</tr>
-												<tr>
-													<td>4G(LTE)</td>
-													<td>Нет</td>
-												</tr>
-												<tr>
-													<td>GPS-модуль</td>
-													<td>Есть</td>
-												</tr>
-											</table>
-											<div class="sidebar__gallery__reiting">
-												<ul class="sidebar__gallery__star__lyst">
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting.png" alt="Star"></li>
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting.png" alt="Star"></li>
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting.png" alt="Star"></li>
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting.png" alt="Star"></li>
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting_0.png" alt="Star"></li>
-												</ul>
-												<div class="sidebar__gallery__reiting__block">4</div>
-											</div>
-											<div class="sidebar__gallery__price"></div>
-											<div class="sidebar__gallery__footer">
-												<div class="sidebar__gallery__footer__block">В наличии</div>
-												<button class="sidebar__gallery__footer__btn">В корзин</button>
-											</div>
-										</li>
-										<li class="sidebar__gallery__item">
-											<ul class="sidebar__gallery__image">
-												<li class="sidebar__gallery__image__lyst"><img src="../img/foto1.png" class="sidebar__gallery__image__item"></li>
-												<li class="sidebar__gallery__image__lyst"><img src="../img/foto1-1.png" class="sidebar__gallery__image__item"></li>
-												<li class="sidebar__gallery__image__lyst"><img src="../img/foto1-2.png" class="sidebar__gallery__image__item"></li>
-												<li class="sidebar__gallery__image__lyst"><img src="../img/foto1-3.png" class="sidebar__gallery__image__item"></li>
-											</ul>
-											<p class="sidebar__gallery__content">Samsung GT-I9301I  GALAXY S 3   </p>
-											<table class="sidebar__gallery__table">
-												<tr>
-													<td>Тип SIM-карты</td>
-													<td>Micro-SIM </td>
-												</tr>
-												<tr>
-													<td>Количество SIM-карт</td>
-													<td>1</td>
-												</tr>
-												<tr>
-													<td>Цвет</td>
-													<td>Белый </td>
-												</tr>
-												<tr>
-													<td>ОС</td>
-													<td>Android</td>
-												</tr>
-												<tr>
-													<td>Связь 3G</td>
-													<td>Есть </td>
-												</tr>
-												<tr>
-													<td>4G(LTE)</td>
-													<td>Нет</td>
-												</tr>
-												<tr>
-													<td>GPS-модуль</td>
-													<td>Есть</td>
-												</tr>
-											</table>
-											<div class="sidebar__gallery__reiting">
-												<ul class="sidebar__gallery__star__lyst">
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting.png" alt="Star"></li>
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting.png" alt="Star"></li>
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting.png" alt="Star"></li>
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting.png" alt="Star"></li>
-													<li class="sidebar__gallery__star__item"><img src="../img/icons/reiting_0.png" alt="Star"></li>
-												</ul>
-												<div class="sidebar__gallery__reiting__block">4</div>
-											</div>
-											<div class="sidebar__gallery__price"></div>
-											<div class="sidebar__gallery__footer">
-												<div class="sidebar__gallery__footer__block">В наличии</div>
-												<button class="sidebar__gallery__footer__btn">В корзину</button>
-											</div>
-										</li>
+										</div>
 									</div>
 								</div>
-								<ul class="sidebar__lower">
-									<li class="sidebar__lower__item"><a class="sidebar__lower__link">&#60;</a></li>
-									<li class="sidebar__lower__item"><a class="sidebar__lower__link active">1</a></li>
-									<li class="sidebar__lower__item"><a class="sidebar__lower__link">2</a></li>
-									<li class="sidebar__lower__item"><a class="sidebar__lower__link">3</a></li>
-									<li class="sidebar__lower__item"><a class="sidebar__lower__link">&#62;</a></li>
-								</ul>
+								<div class="sidebar">
+									<ul id="products-list" class="products__list">
+										<li class="products__item">
+											<div class="products__item-inner">
+												<div class="products__left">
+													<div class="products__slideshow">
+														<div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="http://lorempixel.com/200/200/technics/6" alt="" class="products__slideshow-img"></a>
+															<ul class="products__slideshow-thumbs">
+																<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/0" alt="" class="products__slideshow-thumb-img"></a></li>
+																<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/1" alt="" class="products__slideshow-thumb-img"></a></li>
+																<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" alt="" class="products__slideshow-thumb-img"></a></li>
+															</ul>
+														</div>
+														<div class="products__article">
+															<div class="products__article-word">Артикул</div>
+															<div class="products__article-num">189238</div>
+														</div>
+													</div>
+													<div class="products__desc">
+														<div class="products__desc-title">Samsung FT-I9301I GALAXY S 3</div>
+														<ul class="products__desc-options">
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Тип SIM-карты</div>
+																<div class="products__option-value">Micro-SIM</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">Количество SIM-карт</div>
+																<div class="products__option-value">1</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Цвет</div>
+																<div class="products__option-value">Белый</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">ОС</div>
+																<div class="products__option-value">Android</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Связь 3G</div>
+																<div class="products__option-value">Есть</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">4G (LTE)</div>
+																<div class="products__option-value">Нет</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">GPS-модуль</div>
+																<div class="products__option-value">Есть</div>
+															</li>
+														</ul>
+														<div data-rating="2" class="products__rating">
+															<ul class="products__rating-stars">
+																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
+																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
+																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
+																<li class="products__rating-stars-item"></li>
+																<li class="products__rating-stars-item"></li>
+															</ul>
+															<div class="products__rating-amount">3</div>
+														</div>
+													</div>
+												</div>
+												<div class="products__right">
+													<div class="products__info">
+														<div class="products__price">11 290<i class="rub"></i></div>
+													</div>
+													<div class="products__info-bottom"><a href="#" class="products__buy-btn">В корзину</a>
+														<div class="products__availability">В наличии</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="products__item">
+											<div class="products__item-inner">
+												<div class="products__left">
+													<div class="products__slideshow">
+														<div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="http://lorempixel.com/200/200/technics/6" alt="" class="products__slideshow-img"></a>
+															<ul class="products__slideshow-thumbs">
+																<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/0" alt="" class="products__slideshow-thumb-img"></a></li>
+																<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/1" alt="" class="products__slideshow-thumb-img"></a></li>
+																<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" alt="" class="products__slideshow-thumb-img"></a></li>
+															</ul>
+														</div>
+														<div class="products__article">
+															<div class="products__article-word">Артикул</div>
+															<div class="products__article-num">189238</div>
+														</div>
+													</div>
+													<div class="products__desc">
+														<div class="products__desc-title">Samsung FT-I9301I GALAXY S 3</div>
+														<ul class="products__desc-options">
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Тип SIM-карты</div>
+																<div class="products__option-value">Micro-SIM</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">Количество SIM-карт</div>
+																<div class="products__option-value">1</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Цвет</div>
+																<div class="products__option-value">Белый</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">ОС</div>
+																<div class="products__option-value">Android</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Связь 3G</div>
+																<div class="products__option-value">Есть</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">4G (LTE)</div>
+																<div class="products__option-value">Нет</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">GPS-модуль</div>
+																<div class="products__option-value">Есть</div>
+															</li>
+														</ul>
+														<div data-rating="2" class="products__rating">
+															<ul class="products__rating-stars">
+																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
+																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
+																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
+																<li class="products__rating-stars-item"></li>
+																<li class="products__rating-stars-item"></li>
+															</ul>
+															<div class="products__rating-amount">3</div>
+														</div>
+													</div>
+												</div>
+												<div class="products__right">
+													<div class="products__info">
+														<div class="products__price">11 290<i class="rub"></i></div>
+													</div>
+													<div class="products__info-bottom"><a href="#" class="products__buy-btn">В корзину</a>
+														<div class="products__availability">В наличии</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="products__item">
+											<div class="products__item-inner">
+												<div class="products__left">
+													<div class="products__slideshow">
+														<div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="http://lorempixel.com/200/200/technics/6" alt="" class="products__slideshow-img"></a>
+															<ul class="products__slideshow-thumbs">
+																<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/0" alt="" class="products__slideshow-thumb-img"></a></li>
+																<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/1" alt="" class="products__slideshow-thumb-img"></a></li>
+																<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" alt="" class="products__slideshow-thumb-img"></a></li>
+															</ul>
+														</div>
+														<div class="products__article">
+															<div class="products__article-word">Артикул</div>
+															<div class="products__article-num">189238</div>
+														</div>
+													</div>
+													<div class="products__desc">
+														<div class="products__desc-title">Samsung FT-I9301I GALAXY S 3</div>
+														<ul class="products__desc-options">
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Тип SIM-карты</div>
+																<div class="products__option-value">Micro-SIM</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">Количество SIM-карт</div>
+																<div class="products__option-value">1</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Цвет</div>
+																<div class="products__option-value">Белый</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">ОС</div>
+																<div class="products__option-value">Android</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Связь 3G</div>
+																<div class="products__option-value">Есть</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">4G (LTE)</div>
+																<div class="products__option-value">Нет</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">GPS-модуль</div>
+																<div class="products__option-value">Есть</div>
+															</li>
+														</ul>
+														<div data-rating="2" class="products__rating">
+															<ul class="products__rating-stars">
+																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
+																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
+																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
+																<li class="products__rating-stars-item"></li>
+																<li class="products__rating-stars-item"></li>
+															</ul>
+															<div class="products__rating-amount">3</div>
+														</div>
+													</div>
+												</div>
+												<div class="products__right">
+													<div class="products__info">
+														<div class="products__price">11 290<i class="rub"></i></div>
+													</div>
+													<div class="products__info-bottom"><a href="#" class="products__buy-btn">В корзину</a>
+														<div class="products__availability">В наличии</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="products__item">
+											<div class="products__item-inner">
+												<div class="products__left">
+													<div class="products__slideshow">
+														<div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="http://lorempixel.com/200/200/technics/6" alt="" class="products__slideshow-img"></a>
+															<ul class="products__slideshow-thumbs">
+																<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/0" alt="" class="products__slideshow-thumb-img"></a></li>
+																<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/1" alt="" class="products__slideshow-thumb-img"></a></li>
+																<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" alt="" class="products__slideshow-thumb-img"></a></li>
+															</ul>
+														</div>
+														<div class="products__article">
+															<div class="products__article-word">Артикул</div>
+															<div class="products__article-num">189238</div>
+														</div>
+													</div>
+													<div class="products__desc">
+														<div class="products__desc-title">Samsung FT-I9301I GALAXY S 3</div>
+														<ul class="products__desc-options">
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Тип SIM-карты</div>
+																<div class="products__option-value">Micro-SIM</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">Количество SIM-карт</div>
+																<div class="products__option-value">1</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Цвет</div>
+																<div class="products__option-value">Белый</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">ОС</div>
+																<div class="products__option-value">Android</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Связь 3G</div>
+																<div class="products__option-value">Есть</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">4G (LTE)</div>
+																<div class="products__option-value">Нет</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">GPS-модуль</div>
+																<div class="products__option-value">Есть</div>
+															</li>
+														</ul>
+														<div data-rating="2" class="products__rating">
+															<ul class="products__rating-stars">
+																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
+																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
+																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
+																<li class="products__rating-stars-item"></li>
+																<li class="products__rating-stars-item"></li>
+															</ul>
+															<div class="products__rating-amount">3</div>
+														</div>
+													</div>
+												</div>
+												<div class="products__right">
+													<div class="products__info">
+														<div class="products__price">11 290<i class="rub"></i></div>
+													</div>
+													<div class="products__info-bottom"><a href="#" class="products__buy-btn">В корзину</a>
+														<div class="products__availability">В наличии</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="products__item">
+											<div class="products__item-inner">
+												<div class="products__left">
+													<div class="products__slideshow">
+														<div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="http://lorempixel.com/200/200/technics/6" alt="" class="products__slideshow-img"></a>
+															<ul class="products__slideshow-thumbs">
+																<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/0" alt="" class="products__slideshow-thumb-img"></a></li>
+																<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/1" alt="" class="products__slideshow-thumb-img"></a></li>
+																<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" alt="" class="products__slideshow-thumb-img"></a></li>
+															</ul>
+														</div>
+														<div class="products__article">
+															<div class="products__article-word">Артикул</div>
+															<div class="products__article-num">189238</div>
+														</div>
+													</div>
+													<div class="products__desc">
+														<div class="products__desc-title">Samsung FT-I9301I GALAXY S 3</div>
+														<ul class="products__desc-options">
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Тип SIM-карты</div>
+																<div class="products__option-value">Micro-SIM</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">Количество SIM-карт</div>
+																<div class="products__option-value">1</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Цвет</div>
+																<div class="products__option-value">Белый</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">ОС</div>
+																<div class="products__option-value">Android</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Связь 3G</div>
+																<div class="products__option-value">Есть</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">4G (LTE)</div>
+																<div class="products__option-value">Нет</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">GPS-модуль</div>
+																<div class="products__option-value">Есть</div>
+															</li>
+														</ul>
+														<div data-rating="2" class="products__rating">
+															<ul class="products__rating-stars">
+																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
+																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
+																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
+																<li class="products__rating-stars-item"></li>
+																<li class="products__rating-stars-item"></li>
+															</ul>
+															<div class="products__rating-amount">3</div>
+														</div>
+													</div>
+												</div>
+												<div class="products__right">
+													<div class="products__info">
+														<div class="products__price">11 290<i class="rub"></i></div>
+													</div>
+													<div class="products__info-bottom"><a href="#" class="products__buy-btn">В корзину</a>
+														<div class="products__availability">В наличии</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="products__item">
+											<div class="products__item-inner">
+												<div class="products__left">
+													<div class="products__slideshow">
+														<div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="http://lorempixel.com/200/200/technics/6" alt="" class="products__slideshow-img"></a>
+															<ul class="products__slideshow-thumbs">
+																<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/0" alt="" class="products__slideshow-thumb-img"></a></li>
+																<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/1" alt="" class="products__slideshow-thumb-img"></a></li>
+																<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" alt="" class="products__slideshow-thumb-img"></a></li>
+															</ul>
+														</div>
+														<div class="products__article">
+															<div class="products__article-word">Артикул</div>
+															<div class="products__article-num">189238</div>
+														</div>
+													</div>
+													<div class="products__desc">
+														<div class="products__desc-title">Samsung FT-I9301I GALAXY S 3</div>
+														<ul class="products__desc-options">
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Тип SIM-карты</div>
+																<div class="products__option-value">Micro-SIM</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">Количество SIM-карт</div>
+																<div class="products__option-value">1</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Цвет</div>
+																<div class="products__option-value">Белый</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">ОС</div>
+																<div class="products__option-value">Android</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Связь 3G</div>
+																<div class="products__option-value">Есть</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">4G (LTE)</div>
+																<div class="products__option-value">Нет</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">GPS-модуль</div>
+																<div class="products__option-value">Есть</div>
+															</li>
+														</ul>
+														<div data-rating="2" class="products__rating">
+															<ul class="products__rating-stars">
+																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
+																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
+																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
+																<li class="products__rating-stars-item"></li>
+																<li class="products__rating-stars-item"></li>
+															</ul>
+															<div class="products__rating-amount">3</div>
+														</div>
+													</div>
+												</div>
+												<div class="products__right">
+													<div class="products__info">
+														<div class="products__price">11 290<i class="rub"></i></div>
+													</div>
+													<div class="products__info-bottom"><a href="#" class="products__buy-btn">В корзину</a>
+														<div class="products__availability">В наличии</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="products__item">
+											<div class="products__item-inner">
+												<div class="products__left">
+													<div class="products__slideshow">
+														<div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="http://lorempixel.com/200/200/technics/6" alt="" class="products__slideshow-img"></a>
+															<ul class="products__slideshow-thumbs">
+																<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/0" alt="" class="products__slideshow-thumb-img"></a></li>
+																<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/1" alt="" class="products__slideshow-thumb-img"></a></li>
+																<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" alt="" class="products__slideshow-thumb-img"></a></li>
+															</ul>
+														</div>
+														<div class="products__article">
+															<div class="products__article-word">Артикул</div>
+															<div class="products__article-num">189238</div>
+														</div>
+													</div>
+													<div class="products__desc">
+														<div class="products__desc-title">Samsung FT-I9301I GALAXY S 3</div>
+														<ul class="products__desc-options">
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Тип SIM-карты</div>
+																<div class="products__option-value">Micro-SIM</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">Количество SIM-карт</div>
+																<div class="products__option-value">1</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Цвет</div>
+																<div class="products__option-value">Белый</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">ОС</div>
+																<div class="products__option-value">Android</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Связь 3G</div>
+																<div class="products__option-value">Есть</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">4G (LTE)</div>
+																<div class="products__option-value">Нет</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">GPS-модуль</div>
+																<div class="products__option-value">Есть</div>
+															</li>
+														</ul>
+														<div data-rating="2" class="products__rating">
+															<ul class="products__rating-stars">
+																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
+																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
+																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
+																<li class="products__rating-stars-item"></li>
+																<li class="products__rating-stars-item"></li>
+															</ul>
+															<div class="products__rating-amount">3</div>
+														</div>
+													</div>
+												</div>
+												<div class="products__right">
+													<div class="products__info">
+														<div class="products__price">11 290<i class="rub"></i></div>
+													</div>
+													<div class="products__info-bottom"><a href="#" class="products__buy-btn">В корзину</a>
+														<div class="products__availability">В наличии</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="products__item">
+											<div class="products__item-inner">
+												<div class="products__left">
+													<div class="products__slideshow">
+														<div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="http://lorempixel.com/200/200/technics/6" alt="" class="products__slideshow-img"></a>
+															<ul class="products__slideshow-thumbs">
+																<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/0" alt="" class="products__slideshow-thumb-img"></a></li>
+																<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/1" alt="" class="products__slideshow-thumb-img"></a></li>
+																<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" alt="" class="products__slideshow-thumb-img"></a></li>
+															</ul>
+														</div>
+														<div class="products__article">
+															<div class="products__article-word">Артикул</div>
+															<div class="products__article-num">189238</div>
+														</div>
+													</div>
+													<div class="products__desc">
+														<div class="products__desc-title">Samsung FT-I9301I GALAXY S 3</div>
+														<ul class="products__desc-options">
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Тип SIM-карты</div>
+																<div class="products__option-value">Micro-SIM</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">Количество SIM-карт</div>
+																<div class="products__option-value">1</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Цвет</div>
+																<div class="products__option-value">Белый</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">ОС</div>
+																<div class="products__option-value">Android</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Связь 3G</div>
+																<div class="products__option-value">Есть</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">4G (LTE)</div>
+																<div class="products__option-value">Нет</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">GPS-модуль</div>
+																<div class="products__option-value">Есть</div>
+															</li>
+														</ul>
+														<div data-rating="2" class="products__rating">
+															<ul class="products__rating-stars">
+																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
+																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
+																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
+																<li class="products__rating-stars-item"></li>
+																<li class="products__rating-stars-item"></li>
+															</ul>
+															<div class="products__rating-amount">3</div>
+														</div>
+													</div>
+												</div>
+												<div class="products__right">
+													<div class="products__info">
+														<div class="products__price">11 290<i class="rub"></i></div>
+													</div>
+													<div class="products__info-bottom"><a href="#" class="products__buy-btn">В корзину</a>
+														<div class="products__availability">В наличии</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="products__item">
+											<div class="products__item-inner">
+												<div class="products__left">
+													<div class="products__slideshow">
+														<div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="http://lorempixel.com/200/200/technics/6" alt="" class="products__slideshow-img"></a>
+															<ul class="products__slideshow-thumbs">
+																<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/0" alt="" class="products__slideshow-thumb-img"></a></li>
+																<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/1" alt="" class="products__slideshow-thumb-img"></a></li>
+																<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" alt="" class="products__slideshow-thumb-img"></a></li>
+															</ul>
+														</div>
+														<div class="products__article">
+															<div class="products__article-word">Артикул</div>
+															<div class="products__article-num">189238</div>
+														</div>
+													</div>
+													<div class="products__desc">
+														<div class="products__desc-title">Samsung FT-I9301I GALAXY S 3</div>
+														<ul class="products__desc-options">
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Тип SIM-карты</div>
+																<div class="products__option-value">Micro-SIM</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">Количество SIM-карт</div>
+																<div class="products__option-value">1</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Цвет</div>
+																<div class="products__option-value">Белый</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">ОС</div>
+																<div class="products__option-value">Android</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Связь 3G</div>
+																<div class="products__option-value">Есть</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">4G (LTE)</div>
+																<div class="products__option-value">Нет</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">GPS-модуль</div>
+																<div class="products__option-value">Есть</div>
+															</li>
+														</ul>
+														<div data-rating="2" class="products__rating">
+															<ul class="products__rating-stars">
+																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
+																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
+																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
+																<li class="products__rating-stars-item"></li>
+																<li class="products__rating-stars-item"></li>
+															</ul>
+															<div class="products__rating-amount">3</div>
+														</div>
+													</div>
+												</div>
+												<div class="products__right">
+													<div class="products__info">
+														<div class="products__price">11 290<i class="rub"></i></div>
+													</div>
+													<div class="products__info-bottom"><a href="#" class="products__buy-btn">В корзину</a>
+														<div class="products__availability">В наличии</div>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="pagination">
+									<ul class="pagination__list">
+										<li class="pagination__item pagination__item_prev"><a href="#" class="pagination__link">
+												<div class="pagination__mark"></div></a></li>
+										<li class="pagination__item"><a href="#" class="pagination__link">
+												<div class="pagination__mark">1</div></a></li>
+										<li class="pagination__item"><a href="#" class="pagination__link">
+												<div class="pagination__mark">2</div></a></li>
+										<li class="pagination__item"><a href="#" class="pagination__link">
+												<div class="pagination__mark">3</div></a></li>
+										<li class="pagination__item pagination__item_next"><a href="#" class="pagination__link">
+												<div class="pagination__mark"></div></a></li>
+									</ul>
+								</div>
 							</div>
 						</div>
 						<table class="info-block">
@@ -594,29 +914,31 @@
 		<footer class="footer">
 			<div class="footer__top">
 				<div class="container">
-					<div class="footer__left"><a href="#" class="logo logo_footer"><img src="../img/footer-logo.png" alt="Logo" class="logo__img">
+					<div class="footer__left"><a href="#" class="logo logo_footer"><img src="/img/footer-logo.png" alt="cooltech logo" class="logo__img">
 							<div class="logo__text">cooltech</div></a></div>
 					<div class="footer__right">
-						<ul class="social footer_socials">
-							<li class="social__item social__item_fb"><a href="#" class="social__link"></a></li>
-							<li class="social__item social__item_vk"><a href="#" class="social__link"></a></li>
-							<li class="social__item social__item_tw"><a href="#" class="social__link"></a></li>
+						<ul class="socials socials_footer">
+							<li class="socials__item socials__item_fb"><a href="#" class="socials__link">
+									<div class="social-icon"></div></a></li>
+							<li class="socials__item socials__item_vk"><a href="#" class="socials__link">
+									<div class="social-icon"></div></a></li>
+							<li class="socials__item socials__item_tw"><a href="#" class="socials__link">
+									<div class="social-icon"></div></a></li>
 						</ul>
 						<ul class="footer__nav">
-							<li class="footer-nav__item"><a href="#" class="footer-nav__link">Планшеты</a></li>
-							<li class="footer-nav__item"><a href="#" class="footer-nav__link">Мобильные телефоны</a></li>
-							<li class="footer-nav__item"><a href="#" class="footer-nav__link">Мр3 плееры</a></li>
-							<li class="footer-nav__item"><a href="#" class="footer-nav__link">Персональные компьютеры</a></li>
-							<li class="footer-nav__item"><a href="#" class="footer-nav__link">Ноутбуки</a></li>
-							<li class="footer-nav__item"><a href="#" class="footer-nav__link">Аксессуары</a></li>
-							<li class="footer-nav__item"><a href="#" class="footer-nav__link">Бытовая техника</a></li>
+							<li class="footer__nav-item"><a href="#" class="footer__nav-link">Планшеты</a></li>
+							<li class="footer__nav-item"><a href="#" class="footer__nav-link">Мобильные телефоны</a></li>
+							<li class="footer__nav-item"><a href="#" class="footer__nav-link">Mp3 плееры</a></li>
+							<li class="footer__nav-item"><a href="#" class="footer__nav-link">Персональные компьютеры</a></li>
+							<li class="footer__nav-item"><a href="#" class="footer__nav-link">Аксессуары</a></li>
+							<li class="footer__nav-item"><a href="#" class="footer__nav-link">Бытовая техника</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="footer__bottom">
 				<div class="container">
-					<div class="footer__copyright"></div>All rights reserved. 2015. no copy alowed
+					<div class="footer__copyright">All rights reserved. 2015. no copy allowed</div>
 				</div>
 			</div>
 		</footer>
