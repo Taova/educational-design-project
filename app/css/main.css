@@ -1,5 +1,24 @@
+@charset "UTF-8";
 /* compass sprites begin*/
 /* compass sprites end*/
+@font-face {
+  font-family: 'als_rublregular';
+  src: url("/fonts/rouble-webfont.eot");
+  src: url("/fonts/rouble-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/rouble-webfont.woff2") format("woff2"), url("/fonts/rouble-webfont.woff") format("woff"), url("/fonts/rouble-webfont.ttf") format("truetype"), url("/fonts/rouble-webfont.svg#als_rublregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.rub {
+  font-family: 'als_rublregular';
+  font-style: normal;
+}
+.rub:after {
+  content: 'a';
+  font-style: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
 /*	misc icon spite	*/
 /*common colols*/
 /*! normalize.css v1.1.3 | MIT License | git.io/normalize */
@@ -1474,7 +1493,169 @@ nav.breadcrumbs {
   margin-right: 8px;
 }
 
+/*╨Я╨░╨│╨╕╨╜╨░╤Ж╨╕╤П*/
+.pagination {
+  text-align: right;
+}
+
+.pagination__list {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.pagination__item {
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  vertical-align: top;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #dee1e4;
+  position: relative;
+  overflow: hidden;
+}
+
+.pagination__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background: #fff;
+}
+.pagination__link:hover {
+  background: #e0e0e0;
+}
+
+.pagination__mark {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  margin: auto;
+  line-height: 26px;
+  text-align: center;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 12px;
+  color: #7f7f7f;
+}
+
+.pagination__item_prev .pagination__mark {
+  background: url('../img/icons/paginator-s868e6209e7.png') 0 -79px no-repeat;
+  height: 9px;
+  width: 6px;
+}
+
+.pagination__item_next .pagination__mark {
+  background: url('../img/icons/paginator-s868e6209e7.png') 0 0 no-repeat;
+  height: 9px;
+  width: 6px;
+}
+
 /* --------- other views --------- */
+.products__list_grids {
+  border: none;
+  overflow: auto;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin-left: -11px;
+  padding: 0;
+  background: transparent;
+}
+.products__list_grids .products__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 235px;
+  border-top: 0;
+  text-align: center;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #dee1e4;
+  margin-left: 11px;
+  margin-bottom: 11px;
+}
+.products__list_grids .products__slideshow {
+  width: auto;
+  text-align: center;
+  float: none;
+}
+.products__list_grids .products__slideshow-display, .products__list_grids .products__slideshow-link {
+  display: inline-block;
+  vertical-align: top;
+}
+.products__list_grids .products__slideshow-thumbs {
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+}
+.products__list_grids .products__desc {
+  float: none;
+  width: auto;
+  margin-left: 0;
+}
+.products__list_grids .products__desc-options {
+  margin-bottom: 3px;
+}
+.products__list_grids .products__article {
+  width: auto;
+}
+.products__list_grids .products__left {
+  float: none;
+}
+.products__list_grids .products__info {
+  border: 0 none;
+}
+.products__list_grids .products__info-bottom {
+  position: static;
+  overflow: hidden;
+  *zoom: 1;
+  border: 0 none;
+}
+.products__list_grids .products__right {
+  position: static;
+  width: auto;
+}
+.products__list_grids .products__buy-btn {
+  margin-bottom: 0;
+  float: right;
+}
+.products__list_grids .products__availability {
+  float: left;
+}
+.products__list_grids .products__desc-options {
+  overflow: hidden;
+  *zoom: 1;
+}
+.products__list_grids .products__option-key {
+  display: block;
+  float: left;
+  width: 65%;
+  text-align: left;
+}
+.products__list_grids .products__option-value {
+  display: block;
+  float: right;
+  width: 35%;
+  text-align: right;
+}
+.products__list_grids .products__item-inner {
+  padding: 15px 10px;
+}
+
+.products__option-item_colored {
+  background: red;
+}
+
+p {
+  padding: 10px;
+}
+
 .info-block__title {
   font-size: 20px;
   line-height: 20px;

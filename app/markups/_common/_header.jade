@@ -2,12 +2,12 @@ header.header-container
 	.container
 		ul.header-container__lyst
 			li.header-container__item
-				ul.header-social__lyst
-					-var socials=['fb', 'vk', 'tw']
-					each social in socials
-						li(class='header-social__item')
-							a(href="#" class="header-social__link header-social__link__"+social)
-								.social__icon
+				-var socials=['fb', 'vk', 'tw']
+					ul.header-social__lyst
+						each social in socials
+							li(class='header-social__item')
+								a(href="#" class="header-social__link header-social__link__"+social)
+									.social__icon
 			li.header-container__item.header-number
 				a(href='tel:+79211231213' class='header-number__link')
 					| +7 (921) 123-12-13
