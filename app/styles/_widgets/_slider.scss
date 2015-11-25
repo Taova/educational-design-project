@@ -1,0 +1,24 @@
+.seach-form__slider-elem{
+	margin-top: 18px;
+}
+.ui-slider-horizontal{
+	height: 3px;
+	background:$grey;
+	@include border-radius(0);
+	border: 0 none;
+	margin-bottom: 14px;
+	*{
+		outline: none !important;
+	}
+	.ui-slider-range{
+		background:$orange;
+	}
+	.ui-slider-handle{
+		@include get-sprite($misc-sprite, slider-contlors);
+		top: 0;
+		border: 0 none;
+		@include border-radius(0);
+		margin-left: -4px;
+		cursor: pointer;
+	}
+}

@@ -1,13 +1,16 @@
 $fontFamily:'Open Sans',sans-serif;
-$fontSize:14px;
-@import "_misc/_mixin.scss";
-@import "_misc/_fonts.scss";
-/*	misc icon spite	*/
 $misc-sprite:sprite-map('icons/_misc/*.png', $spacing:70px);
 /*common colols*/
 $black:#333;
 $orange:#ff6600;
 $grey:#dee1e4;
+$fontSize:14px;
+@import "_misc/_mixin.scss";
+@import "_misc/_fonts.scss";
+@import "_plugins/_jquery-ui.min.scss";
+@import "_widgets/_slider.scss";
+/*	misc icon spite	*/
+
 @import "compass";
 @import "_misc/_normalize.scss";
 @import "section/_header.scss";

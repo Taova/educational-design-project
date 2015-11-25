@@ -9,6 +9,9 @@
 		<title> Главная страница</title>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="css/main.css">
+		<script src="bower/jquery/jquery.min.js"></script>
+		<script src="js/_plugins/jquery-ui.min.js"></script>
+		<script src="js/main.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -144,20 +147,14 @@
 											<div class="seach-form__lyst">
 												<div class="seach-form__left">
 													<div class="seach-form__text">от</div>
-													<input type="text" value="0" class="seach-form__min-price seach-form__price">
+													<input type="text" value="0" class="seach-form__min-price seach-form__price-from">
 												</div>
 												<div class="seach-form__right">
 													<div class="seach-form__text">до</div>
-													<input type="text" value="13000" class="seach-form__max-price seach-form__price">
-												</div>
-												<div class="seach-form__range-controls">
-													<div class="seach-form__scale">
-														<div style="width:50%" class="seach-form__bar"></div>
-													</div>
-													<div class="seach-form__toggle min-toggle"></div>
-													<div class="seach-form__toggle max-toggle"></div>
+													<input type="text" value="13000" class="seach-form__max-price seach-form__price-to">
 												</div>
 											</div>
+											<div data-min="0" data-max="30000" class="seach-form__slider-elem"></div>
 										</div>
 									</li>
 									<li class="form-main__item">
@@ -245,7 +242,7 @@
 									</div>
 								</div>
 								<div class="sidebar">
-									<ul id="products-list" class="products__list_grids">
+									<ul id="products-list" class="products__list products__list_lines">
 										<li class="products__item">
 											<div class="products__item-inner">
 												<div class="products__left">
