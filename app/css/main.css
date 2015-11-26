@@ -1809,6 +1809,7 @@ body .ui-tooltip {
   -moz-background-clip: padding-box;
   background-clip: padding-box;
   border: 0 none;
+  margin-bottom: 14px;
 }
 .ui-slider-horizontal * {
   outline: none !important;
@@ -1829,6 +1830,7 @@ body .ui-tooltip {
   -moz-background-clip: padding-box;
   background-clip: padding-box;
   margin-left: -4px;
+  cursor: pointer;
 }
 
 /*	misc icon spite	*/

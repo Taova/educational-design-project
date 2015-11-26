@@ -9,7 +9,7 @@ var SliderWidget=(function(){
 
 		from.val(values[0]);
 		to.val(values[1]);
-	}
+	
 	return{
 		init: function(){
 
@@ -25,7 +25,10 @@ var SliderWidget=(function(){
 				    max: max,
 				    values: [min,max],
 				    slide: function() {
-			    	_insertValues($this);
+			    		_insertValues($this);
+			    	},
+			    	create: function(){
+			    		_insertValues($this);
 			    	}
 			       });
 
@@ -34,9 +37,32 @@ var SliderWidget=(function(){
 			
 		}
 	}
+	
+}());
+
+
+var RatingWidget = (function(){
+
+	var _letTheStars = function(ratingAmount){
+		var 
+			starsArray=[];
+	};
+
+	return{
+		init:function(){
+			$('.products__rating').each(function(){
+				console.log($(this).data('rating'));
+			});
+		}
+	}
 }());
 
 $(document).ready(function(){
+
+	if ($('.products__rating').length){
+		RatingWidget.init();
+	}
+
 	if ($('.seach-form__slider-elem').length){
 		SliderWidget.init();
 	}
