@@ -8,7 +8,5 @@
 - 2.cd dz2
 - 3.npm i
 - 4.bower i
-- 5.npm i gulp-compass
-- 6.npm i gulp-jade
-- 7.npm i gulp-plumber
-- 8.gulp
+- 5.compass init
+- 6.gulp
